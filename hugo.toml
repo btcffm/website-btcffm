@@ -1,0 +1,61 @@
+baseURL = 'https://btcffm.de/'
+languageCode = 'de-de'
+title = 'Frankfurt Bitcoin Meetup'
+theme = "anubis2"
+defaultContentLanguage = "de"
+showFullContent = true
+
+[author]
+name = "btcffm"
+
+[params]
+author = "btcffm"
+description = "Website of the Bitcoin Meetup Frankfurt"
+dateFormat = "02.01.2006"
+paginationSinglePost = true
+showFullContent = true
+disableComments = true
+
+colorTheme = "auto"
+colorThemeSwitcher = true
+
+#readMore = false
+#readNextPosts = 2
+copyCodeButton = true
+rssAsSocialIcon = true
+locale = "de-de"
+mathjax = false
+toc = false
+ 
+[[params.social]]
+id = "telegram"
+url = "https://t.me/btcffm"
+[[params.social]]
+id = "github"
+url = "https://github.com/btcffm"
+[[params.social]]
+id = "nostr"
+url = "https://primal.net/p/npub1m3msk8ssz6rv3kvqmsavufry0qayzxx5cldx22plrhlrntgkmh7qr37c50"
+[[params.social]]
+id = "twitter"
+url = "https://twitter.com/btcffm"
+[[params.social]]
+id = "meetup"
+url = "https://www.meetup.com/de/bitcoin-frankfurt/"
+[[params.social]]
+id = "donate"
+url = "https://geyser.fund/project/frankfurterbitcoinmeetup"
+
+
+[languages.de]
+languageName = "Deutsch"
+[languages.de.params]
+languageCode = "de-de"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+author = "authors"
+
+[markup.goldmark.renderer]
+unsafe = true

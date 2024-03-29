@@ -1,0 +1,28 @@
+{{ $dateFormat := "2006-01-02" }}
+{{ $timeFormat := "15:04" }}
+{{ if .Site.Params.dateFormat }}
+    {{ $dateFormat = .Site.Params.dateFormat }}
+{{ end }}
+{{ $machineDateFormat := "2006-01-02" }}
+
+<small>
+    {{ if .Params.date }}
+        <span class="post-date dt-published">
+            {{ partial "font-awesome.html" (dict "iconName" "calendar" "custom" false) }}
+            <time style="display: inline-block; padding: 0em 1em;" datetime="{{ .Params.date.Format $machineDateFormat }}">
+                {{ .Params.date.Format $dateFormat }}
+                ab
+                {{ .Params.date.Format $timeFormat -}}
+            </time>
+        </span>
+	<br>
+    {{ end }}
+    {{ if .Params.location }}
+        <span>
+            {{ partial "font-awesome.html" (dict "iconName" "location-dot" "custom" false) }}
+            <address style="display: inline-block; padding: 0em 1em;">
+                {{ .Params.location }}
+            </address>
+        </span>
+    {{ end }}
+</small>

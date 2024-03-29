@@ -1,0 +1,24 @@
+{{ define "main" }}
+    <div class="homepage-content">
+        {{ .Content }}
+    </div>
+    <div class="articles h-feed">
+        <h1>
+            Termine
+        </h1>
+        {{ $pages := where (where site.RegularPages "Type" "in" site.Params.mainSections) "Params.hidden" "!=" true }}
+        {{ range $pages }}
+            <div class="post-card" style="margin: 1em 0em; padding: 1em;">
+                <header>
+                    <h2 class="{{ if .Params.draft }} draft{{end}}"><b>{{ trim .Title " " | markdownify }}</b></h2>
+                    {{ partial "post-language-switcher.html" . }}
+                </header>
+                <div>
+                    {{ .Content }}
+                </div>
+                {{ partial "post-info.html" . }}
+            </div>
+        {{ end }}
+    </div>
+
+{{ end }}
