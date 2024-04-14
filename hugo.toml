@@ -1,4 +1,3 @@
-baseURL = 'https://btcffm.de/'
 languageCode = 'de-de'
 title = 'Frankfurt Bitcoin Meetup'
 theme = "anubis2"
