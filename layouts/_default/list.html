@@ -14,12 +14,10 @@
         {{ end}}
 
         {{ range $pagesRange }}
-            GELBWURST
             <div class="post-short-list h-entry">
                 <div class="post-header">
                     <header>
                         <h2 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}">{{ trim .Title " " | markdownify }}</h2>
-                        {{ partial "post-language-switcher.html" . }}
                         {{ partial "post-info.html" . }}
                     </header>
                 </div>

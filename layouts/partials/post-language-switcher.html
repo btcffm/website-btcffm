@@ -1,0 +1,10 @@
+{{ if .IsTranslated }}
+    {{ $pageLang := .Page.Lang}}
+    {{ range (sort .AllTranslations ".Lang" "asc" ) }}
+        {{ if eq .Lang $pageLang }}
+            <span>{{ upper .Lang }} </span>&nbsp;
+        {{ else }}
+            <span><a href="{{ .Permalink }}">{{ .Lang }}</a>&nbsp;</span>
+        {{ end }}
+    {{ end }}
+{{ end }}

@@ -1,7 +1,7 @@
-languageCode = 'de-de'
+languageCode = 'en-US'
 title = 'Frankfurt Bitcoin Meetup'
 theme = "anubis2"
-defaultContentLanguage = "de"
+defaultContentLanguage = "en"
 showFullContent = true
 
 [author]
@@ -45,11 +45,23 @@ url = "https://www.meetup.com/de/bitcoin-frankfurt/"
 id = "donate"
 url = "https://geyser.fund/project/frankfurterbitcoinmeetup"
 
-
-[languages.de]
-languageName = "Deutsch"
-[languages.de.params]
-languageCode = "de-de"
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+[languages]
+  [languages.de]
+    contentDir = 'content/de'
+    disabled = false
+    languageCode = 'de-DE'
+    languageDirection = 'ltr'
+    languageName = 'Deutsch'
+    weight = 2
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    weight = 1
 
 [taxonomies]
 category = "categories"

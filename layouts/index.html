@@ -11,7 +11,6 @@
             <div class="post-card" style="margin: 1em 0em; padding: 1em;">
                 <header>
                     <h2 class="{{ if .Params.draft }} draft{{end}}"><b>{{ trim .Title " " | markdownify }}</b></h2>
-                    {{ partial "post-language-switcher.html" . }}
                 </header>
                 <div>
                     {{ .Content }}
