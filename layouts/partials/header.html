@@ -3,7 +3,11 @@
         {{ partial "site-title.html" . }}
     </div>
     <div class="header-top-right">
-        {{ partial "theme-switcher.html" . }}  
+        {{ $languagesCount := $.Site.Home.AllTranslations }}
+        {{ if gt $languagesCount 1 }}
+            {{ partial "post-language-switcher.html" . }}
+        {{ end }} 
+        {{ partial "theme-switcher.html" . }}
     </div>
 </div>
 {{ partial "social-icons.html" . }}

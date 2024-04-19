@@ -242,6 +242,13 @@ header h2 {
 }
 
 .header-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-top-right a {
+    color: var(--link-color);
 }
 
 .header-top-left {
@@ -635,29 +642,12 @@ code.has-jax {
     display: block;
 }
 
-.post-translations {
-    margin-left: 0.5em;
-    list-style: none;
-    padding: 0;
-    display: inline;
-    font-size: 14px;
-}
-
-.post-translations > li {
-    display: inline;
-}
-
-.post-translations > li:not(:last-child)::after {
-    content: "|";
-    display: inline-block;
-}
-
-.post-translations > li a {
+.post-translations a {
     color: var(--link-color);
 }
 
-.post-translations > li a:hover,
-.post-translations > li a:focus {
+.post-translations a:hover,
+.post-translations a:focus {
     color: var(--link-state-color);
 }
 
