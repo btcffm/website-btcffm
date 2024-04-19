@@ -4,7 +4,7 @@
     </div>
     <div class="articles h-feed">
         <h1>
-            Termine
+            Meetups
         </h1>
         {{ $pages := where (where site.RegularPages "Type" "in" site.Params.mainSections) "Params.hidden" "!=" true }}
         {{ range $pages }}
