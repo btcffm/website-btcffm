@@ -8,7 +8,7 @@
         </h1>
         {{ $pages := where (where site.RegularPages "Type" "in" site.Params.mainSections) "Params.hidden" "!=" true }}
         {{ range $pages }}
-            <div class="post-card" style="margin: 1em 0em; padding: 1em;">
+            <div class="post-card" style="margin: 1em 0em; padding: 1em;" id="{{ .Params.date.Format "2006-01-02" }}">
                 <header>
                     <h2 class="{{ if .Params.draft }} draft{{end}}"><b>{{ trim .Title " " | markdownify }}</b></h2>
                 </header>
