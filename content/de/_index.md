@@ -9,8 +9,8 @@ Bitcoin Meetups aus dem Jahre 2013. Das Meetup findet **jeden 3. Donnerstag im
 Monat** statt!
 
 Unser Frankfurter Meetup findet von September bis einschließlich April in der
-[Zentrale] statt, einem wunderschönen Co-Working-Space in Bornheim direkt an
-der Berger Straße.
+[Zentrale] statt, einem wunderschönen Co-Working-Space in Frankfurt-Bornheim
+direkt an der Berger Straße.
 In den Sommermonaten treffen wir uns natürlich trotzdem – im Park, der Grillhütte
 oder einer Apfelweinkneipe, ganz nach Lust und Laune und dem Input der Community!
 
